@@ -2,24 +2,23 @@
 
 int main()
 {
-	int x, y, z;
+	int x;
 
-	std::cout << "Enter three number:";
-	std::cin >> x >> y >> z;
+	std::cout << "Enter a number:";
+	std::cin >> x;
 
-	int largest = x;
+	//int largest = x;
 
-	if (y > largest)
+	if (x%2 == 0)
 	{
-		largest = y;
+		std::cout << x << " is even";
 	}
 
-	if (z > largest)
+	else
 	{
-		largest = z;
+		std::cout << x << " is odd";
 	}
-
-	std::cout << largest;
+	
 	return 0;
 
 }
